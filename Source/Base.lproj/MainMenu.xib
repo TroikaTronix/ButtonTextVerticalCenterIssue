@@ -684,14 +684,30 @@
         <window title="ButtonTextVerticalCenterIssue" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="470" height="162"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="470" height="162"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fut-yx-kcz" customClass="IZButton">
+                        <rect key="frame" x="18" y="104" width="275" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Checkbox with Text" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wgo-Sg-JlK" customClass="IZButtonCell">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="9999" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-hH-49l" customClass="IZButton">
+                        <rect key="frame" x="18" y="59" width="165" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="radio" title="Radio Button With Text" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="3TH-wW-0V1" customClass="IZButtonCell">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                     <button verticalHuggingPriority="750" id="sAU-Vd-yf5" customClass="IZButton">
-                        <rect key="frame" x="384" y="13" width="76" height="32"/>
+                        <rect key="frame" x="95" y="13" width="76" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e52-a4-4yL" customClass="IZButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -702,7 +718,7 @@ DQ
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" id="n0a-e8-YlJ">
-                        <rect key="frame" x="302" y="13" width="76" height="32"/>
+                        <rect key="frame" x="13" y="13" width="76" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="be5-bt-2av">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -712,25 +728,9 @@ Gw
 </string>
                         </buttonCell>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fut-yx-kcz" customClass="IZButton">
-                        <rect key="frame" x="26" y="309" width="275" height="40"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Checkbox with Text" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wgo-Sg-JlK" customClass="IZButtonCell">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="smallSystem"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="9999" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-hH-49l" customClass="IZButton">
-                        <rect key="frame" x="26" y="264" width="165" height="40"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="radio" title="Radio Button With Text" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="3TH-wW-0V1" customClass="IZButtonCell">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="139" y="-120"/>
+            <point key="canvasLocation" x="134" y="-219"/>
         </window>
     </objects>
 </document>
